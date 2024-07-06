@@ -11,71 +11,59 @@
     android:padding="20dp">
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="80dp"
         android:src="@drawable/twitter"
         app:tint="@color/white" />
 
-    <TextView
-        android:id="@+id/usernameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Enter username:"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:padding="5dp"
         android:fontFamily="sans-serif"
-        android:hint="Username"
+        android:hint="Enter username"
         android:textColorHint="#7C1B0404"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/passwordLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Enter password:"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/text_frame"/>
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:padding="5dp"
         android:fontFamily="sans-serif"
-        android:hint="Password"
+        android:hint="Enter password"
         android:textColorHint="#7C1B0404"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/text_frame"/>
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="#FFFFFF"
         android:text="Login"
         android:textColor="#0096FF" />
 
-    <TextView
-        android:id="@+id/forgotPw"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/forgotPass"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-condensed"
-        android:gravity="center_horizontal"
+        android:layout_gravity="center"
         android:text="Forgot your password?"
-        android:textSize="15sp" />
+        android:backgroundTint="#00FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginBottom="30dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,6 +94,7 @@
         android:fontFamily="sans-serif-condensed"
         android:gravity="center_horizontal"
         android:text="Create an account"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
 
 </LinearLayout>
